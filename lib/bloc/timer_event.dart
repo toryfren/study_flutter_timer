@@ -21,7 +21,11 @@ class TimerStarted extends TimerEvent {
   String toString() => 'TimerStated { duration: $duration }';
 }
 
-// TODO :: TimerPaused, TimerResumed, TimerReset
+class TimerPaused extends TimerEvent {}
+
+class TimerResumed extends TimerEvent {}
+
+class TimerReset extends TimerEvent {}
 
 class TimerTicked extends TimerEvent {
   final int duration;
